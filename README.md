@@ -1,1 +1,1 @@
-# qrclounter
+# qrcounter
