@@ -1,1 +1,25 @@
-<h1>test</h1>
+<html>
+<head>
+<script type="text/javascript">
+  var appInsights = window.appInsights || function(config) {
+    function r(config){t[config]=function(){var i=arguments;t.queue.push({name:config,args:i})}}
+    var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;
+    for(s.src=config.url||"https://js.monitor.azure.com/scripts/b/ai.2.min.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),
+    t.queue=[],t.version="2.0",i=["trackEvent","trackPageView","trackException","trackTrace","trackMetric","startTrackPage",
+    "stopTrackPage","startTrackEvent","stopTrackEvent","addTelemetryInitializer","setAuthenticatedUserContext",
+    "clearAuthenticatedUserContext"],f=0;f<i.length;f++)r(i[f]);
+    return t
+  }({
+    instrumentationKey: "a93c75e7-9276-43a0-9e6a-b3b0a1135ef6",
+    endpointUrl: "https://germanywestcentral-1.in.applicationinsights.azure.com/" 
+  });
+  
+  window.appInsights = appInsights;
+  appInsights.trackPageView(); 
+</script>
+
+</head>
+  <body>
+    <h1>test</h1>
+  </body>
+</html>
