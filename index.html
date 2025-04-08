@@ -1,14 +1,25 @@
 <html>
 <head>
 <script type="text/javascript">
-!function(T,l,y){var S=T.location,k=T.top;T.appInsights={queue:[],version:"2.0"},y=!0;var t=l.createElement("script");t.src="https://js.monitor.azure.com/scripts/b/ai.2.min.js",t.crossOrigin="anonymous",t.type="text/javascript";var e=l.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e);for(var n=function(T){return function(...l){T.queue.push({name:T.name,args:l})}},i=["trackEvent","trackPageView","trackException","trackTrace","trackMetric","startTrackPage","stopTrackPage","startTrackEvent","stopTrackEvent","addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext"],a=0;a<i.length;a++)T.appInsights[i[a]]=n(T.appInsights,i[a]);T.appInsights.instrumentationKey="a93c75e7-9276-43a0-9e6a-b3b0a1135ef6",T.appInsights.endpointUrl="https://germanywestcentral-1.in.applicationinsights.azure.com/",T.appInsights.appId="fc5aea7c-b957-43e9-a715-8bd66aece93c",T.appInsights.trackPageView()}(
-window,document
-);
+!function(T,l,y){
+  var S=T.location,k=T.top;
+  T.appInsights={queue:[],version:"2.0"},y=!0;
+  var t=l.createElement("script");
+  t.src="https://js.monitor.azure.com/scripts/b/ai.2.min.js",
+  t.crossOrigin="anonymous",
+  t.type="text/javascript";
+  var e=l.getElementsByTagName("script")[0];
+  e.parentNode.insertBefore(t,e);
+  for(var n=function(T){return function(...l){T.queue.push({name:T.name,args:l})}},
+  i=["trackEvent","trackPageView","trackException","trackTrace","trackMetric","startTrackPage","stopTrackPage","startTrackEvent","stopTrackEvent","addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext"],
+  a=0;a<i.length;a++)T.appInsights[i[a]]=n(T.appInsights,i[a]);
+  T.appInsights.instrumentationKey="a93c75e7-9276-43a0-9e6a-b3b0a1135ef6";
+  T.appInsights.endpointUrl="https://germanywestcentral-1.in.applicationinsights.azure.com/";
+  T.appInsights.trackPageView();
+}(window,document);
 </script>
-
-
 </head>
-  <body>
-    <h1>test</h1>
-  </body>
+<body>
+  <h1>test</h1>
+</body>
 </html>
